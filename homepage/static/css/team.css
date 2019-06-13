@@ -1,0 +1,66 @@
+ul{
+list-style-type:none;
+}
+
+.teamlogo{
+  float: left;
+}
+
+#header{
+  background-color: #FABC41;
+  height: 300;
+}
+
+#headerli{
+  margin: 0;
+  padding-top: 50;
+}
+
+#header li{
+ font-size: 40px;
+ display: inline-block;
+}
+
+#header a{
+  text-decoration: none;
+  color: #C82A66;
+}
+
+body{
+  font-family:'PT Serif','Noto Sans JP' ,sans-serif;
+	background-color: #f4cd41;
+  color:#C82A66 ;
+  margin: 0;
+	}
+
+h1{
+font-size: 48;
+}
+
+#title{
+}
+
+#content{
+padding-top: 10;
+  }
+
+#sidebar{
+  float: right;
+  clear:both;
+}
+
+@media (max-width: 1000px) {
+     #header li{
+       font-size: 25;
+     }
+
+     #heading h1{
+       font-size: 30;
+     }
+
+     #sidebar {
+          float: right;
+          margin: 0;
+          width:50;
+          display: none;
+     }

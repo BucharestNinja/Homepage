@@ -1,0 +1,32 @@
+{% load static %}
+<html>
+    <head>
+      <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+      <link rel="stylesheet" href="{% static 'css/team.css'%}">
+      {% block extra_head %}{% endblock %}
+        <title>Spicy Games</title>
+    </head>
+    <body>
+      <div id="header">
+        <img src="../../static/images/logo.png" width="300px" class="teamlogo">
+        <ul id="headerli">
+          <li id="home"><a href="/">HOME</a></li>
+          <li>/<li>
+          <li id="team"><a href="/team">TEAM</a></li>
+          <li>/</li>
+          <li id="products"><a href="/products">PRODUCTS</a></li>
+          <li>/</li>
+          <li id="blog"><a href="/news">NEWS</a></li>
+          <li>/<li>
+          <li id="contact"><a href="/contact">CONTACT</a></li>
+        </ul>
+        {%block selectHeader %}{%endblock%}
+      </div>
+        <div id="sidebar">
+         <a class="twitter-timeline" data-width="100%" data-height="1000" data-theme="dark" href="https://twitter.com/Bucharest_NINJA?ref_src=twsrc%5Etfw">Tweets by Bucharest_NINJA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      {%block content%}{%endblock%}
+
+    </body>
+</html>

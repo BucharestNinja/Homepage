@@ -1,0 +1,20 @@
+{% extends 'homepage/base.html' %}
+{% load static %}
+{% block extra_head %}
+  <link rel="stylesheet" href="{% static 'css/team.css'%}">
+{% endblock %}
+{% block selectHeader%}<h1>TEAM</h1>{%endblock%}
+{% block content %}
+ <div id="heading">
+  <h1>What is Spicy Games?</h1>
+ </div>
+ <div id="title">
+ <h1>ちょっと辛くて、だけど忘れられないゲームを届ける</h1>
+ </div>
+ <div id="content">
+ <h2>様々な娯楽に溢れている現代。ありきたりな作品はあっという間に、顧みられなくなってしまいます。
+ <h2>Spicy Gamesはそんな時代に、インディーズならではの刺激的な作品をリリースすることで立ち向かいます。
+ <h2>我々はゲームはもちろん、小説等のジャンルにも挑戦し、皆様にSpicyな経験をお届けします。
+ </div>
+
+{% endblock %}

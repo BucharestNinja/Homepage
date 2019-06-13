@@ -1,0 +1,36 @@
+ul{
+list-style-type:none;
+}
+
+#topinner{
+  text-align: center;
+}
+
+img{
+  width: 50%;
+  height:70%
+}
+
+#topnavili{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+}
+
+#topnavi li{
+ font-size: 40px;
+ display: inline-block;
+}
+
+#topnavi a{
+  text-decoration: none;
+  color:  #C82A66;
+}
+
+body {
+  font-family:'PT Serif','Noto Sans JP' ,sans-serif;
+	background-color: #FABC41;
+  color: #C82A66;
+  margin: 0;
+	}

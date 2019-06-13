@@ -1,0 +1,20 @@
+{% extends 'homepage/base.html' %}
+{% load static %}
+{% block extra_head %}
+  <link rel="stylesheet" href="{% static 'css/blog.css'%}">
+{% endblock %}
+{% block selectHeader%}<h1>NEWS</h1>{%endblock%}
+{% block content %}
+ <div id="heading">
+  <h1>NEWS LISTS</h1>
+ </div>
+ <div id="content">
+   {% for item in object_list %}
+   <ul>
+   <li id="article_header"><a href="{% url 'post_detail' pk=item.pk %}">{{ item.title }}</a></li>
+   <li>{{item.published_date}}</li>
+   </ul>
+   {% endfor %}
+ </div>
+
+{% endblock %}
